@@ -11,6 +11,9 @@ Tạo CSDL
 Thông tin đặt vé
 - 1 người dùng có thể mua nhiều vé tàu, 1 vé tàu chỉ thuộc 1 người dùng(dùng 1 lần đối với vé guest)
 - 1 vé chỉ có 1 thẻ RFID, trong 1 khoảng thời gian thì 1 thẻ RFID thuộc 1 vé.
+- Sau thời gian nhận thẻ theo quy định mã sẽ tự động hủy.
+
+
 
 Chức năng cụ thể web
 - Đăng nhập
@@ -20,4 +23,3 @@ Chức năng cụ thể web
 - Lưu thông tin trạm ( giờ xuất phát, giờ đến)
 - lịch trình từng tuyến ( giờ xuất phát, giờ tới ga)
 - Lưu trữ thông tin người dùng
-- 
