@@ -5,7 +5,7 @@ Tạo CSDL
 - 1 bảng trạm()                   //lên web lưu lại, không thay đổi
 - 1 bảng vé tàu( giá(tính theo trạm), chi tiết vé( 3 trạm or 4 trạm....))       // không thay đổi
 - 1 bảng thẻ RFID ( ID thẻ, loại thẻ(ngày, tháng, guest))         // không thay đổi
-- 1 bảng vé của user(ID người dùng, ID vé, thời gian mua, date)
+// 1 bảng vé của user(ID người dùng, ID vé, thời gian mua, date)
 - 1 bảng Vé của RFID (ID vé, ID thẻ,thời gian bắt đầu/kết thức, tên trạm bắt đầu/Kết thúc )
 
 Thông tin đặt vé
@@ -15,9 +15,8 @@ Thông tin đặt vé
 
 
 
-Chức năng cụ thể web
-- Đăng nhập
-- Tra cứu thông tin người dùng.
+Chức năng cụ thể app
+- Đăng nhập (ID, password, mã xác minh)
 - Thông tin nhà ga
 - Đặt vé tàu(gửi mã về người dùng)
 - Lưu thông tin trạm ( giờ xuất phát, giờ đến)

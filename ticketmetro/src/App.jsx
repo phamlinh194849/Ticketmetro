@@ -4,13 +4,17 @@ import './App.css'
 function App() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+  const [showPassword, setShowPassword] = useState(false)
 
   const handleLogin = (e) => {
     e.preventDefault()
-    // Tạm in ra console, sau này bạn có thể gọi API
-    console.log('Email:', email)
-    console.log('Password:', password)
-    alert('Đăng nhập thành công (demo)')
+
+    if (email === 'admin' && password === 'Admin@1234') {
+      alert('Đăng nhập thành công')
+      window.location.href = '/dashboard' 
+    } else {
+      alert('Sai tài khoản hoặc mật khẩu')
+    }
   }
 
   return (
@@ -18,19 +22,26 @@ function App() {
       <h1>Đăng nhập</h1>
       <form onSubmit={handleLogin} className="login-form">
         <input
-          type="email"
-          placeholder="Email"
+          type="text"
+          placeholder="Username"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
         />
         <input
-          type="password"
+          type={showPassword ? 'text' : 'password'}
           placeholder="Mật khẩu"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           required
         />
+        <label>
+          <input
+            type="checkbox"
+            checked={showPassword}
+            onChange={() => setShowPassword(!showPassword)}
+          /> Hiện mật khẩu
+        </label>
         <button type="submit">Đăng nhập</button>
       </form>
     </div>

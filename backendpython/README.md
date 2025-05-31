@@ -13,6 +13,8 @@ cd backendpython
 ```
 
 ### ✅ Bước 3: Kích hoạt môi trường ảo
+tao mt ao
+python -m venv venv
 
 Nếu bạn đang dùng **Windows**:
 
@@ -32,9 +34,10 @@ source venv/bin/activate
 ### ✅ (Tùy chọn) Nếu bạn có nhiều dependency hơn:
 
 Nếu trên máy cũ bạn đã tạo `requirements.txt`, bạn có thể dùng:
+Nếu trên máy cũ bạn đã tạo `requirements.txt`, bạn có thể dùng:
 
 ```bash
-pip install -r requirements.txt
+venv\Scripts\activate
 ```
 
 ---
