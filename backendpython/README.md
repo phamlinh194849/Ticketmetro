@@ -34,6 +34,11 @@ source venv/bin/activate
 ### ✅ (Tùy chọn) Nếu bạn có nhiều dependency hơn:
 
 Nếu trên máy cũ bạn đã tạo `requirements.txt`, bạn có thể dùng:
+
+``` bash
+pip install -r requirements.txt
+``` 
+
 Nếu trên máy cũ bạn đã tạo `requirements.txt`, bạn có thể dùng:
 
 ```bash
